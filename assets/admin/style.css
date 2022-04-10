@@ -1,0 +1,52 @@
+:root{
+    --warna:#979aa5;
+    --warnaInti:#0080AE;
+}
+.container{
+    display:grid;
+    place-items:center;
+    min-height: 100vh; 
+    
+}
+.login{
+    width:500px;
+    display: grid;
+    grid-template-columns:1;
+    grid-template-rows: repeat(3,auto);
+    border:1px solid var(--warna);
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px var(--warna);
+}
+h2{
+    margin:0px 0 5px 0;
+    text-align:center;
+    background-color: var(--warnaInti);
+    color:white;
+    padding:10px;
+}
+form{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows:repeat(5,auto);
+}
+form input[type="text"], form label{
+    margin:5px 10px;
+}
+form input[type="text"]{
+    padding:10px 0 10px 10px;
+    color:var(--warna);
+}
+button{
+    background-color: var(--warnaInti);
+    margin:5px 0 0 0;
+    padding:10px 0;
+    outline:none;
+    border:none;
+    font-weight: bold;
+    font-size:15px;
+    color:white;
+    cursor:pointer;
+}
+button:hover{
+    background-color:#014f6b;
+}
